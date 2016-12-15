@@ -1,0 +1,20 @@
+{
+  "name": "workspace",
+  "homepage": "https://github.com/MrSnowNB/ticTacToe",
+  "authors": [
+    "Mr Snow <mark_snow@nbpsnj.net>"
+  ],
+  "description": "Trying to play Tic-Tac-Toe",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

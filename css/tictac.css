@@ -1,0 +1,24 @@
+.gameBoard{
+    /*background-color: red;*/
+       width:372px;
+       height: 372px;
+       margin:  auto;
+  
+  -webkit-box-shadow: 1px 1px 5px  black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 1px 5px  black;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         1px 1px 10px  black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.row {
+   /* background-color:Blue;*/
+    clear:both;
+    overflow:hidden;
+}
+
+.square{
+    float: left;
+   /* background-color: green;*/
+    width: 122px;
+    height: 122px;
+   border: 1px solid black;
+}
