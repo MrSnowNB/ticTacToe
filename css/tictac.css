@@ -9,7 +9,7 @@
    box-shadow:         1px 1px 10px  black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
-.row {
+row {
    /* background-color:Blue;*/
     clear:both;
     overflow:hidden;
