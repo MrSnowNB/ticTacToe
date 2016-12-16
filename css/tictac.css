@@ -21,4 +21,16 @@
     width: 122px;
     height: 122px;
    border: 1px solid black;
+   cursor: pointer;
+}
+
+.ex{
+ background-color:purple;   
+}
+
+.oh{
+    background-color:yellow;   
+}
+    
+    
 }
