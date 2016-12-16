@@ -16,6 +16,7 @@ $(document).ready(function(){
                 squareSelected.addClass('ex').append('<i class="fa fa-times" aria-hidden="true"></i>');
                 if(didIwin('ex')){
                     alert('Congrats! Player ' + player + ' has won!');
+                    location.reload();
                 }else{
                     player = 2;
                 }
@@ -24,6 +25,7 @@ $(document).ready(function(){
                 squareSelected.addClass('oh').append('<i class="fa fa-circle-o" aria-hidden="true"></i>');
                 if(didIwin('oh')){
                     alert('Congrats! Player ' + player + ' has won!');
+                    location.reload();
                 }else{
                     player = 1;
                 }
