@@ -13,8 +13,7 @@ $(document).ready(function(){
         }else{//all of the logic
            
             if(player===1){
-                squareSelected.addClass('ex');
-                
+                squareSelected.addClass('ex').append('<i class="fa fa-times" aria-hidden="true"></i>');
                 if(didIwin('ex')){
                     alert('Congrats! Player ' + player + ' has won!');
                 }else{
@@ -22,8 +21,7 @@ $(document).ready(function(){
                 }
             
             }else{
-                squareSelected.addClass('oh');
-                
+                squareSelected.addClass('oh').append('<i class="fa fa-circle-o" aria-hidden="true"></i>');
                 if(didIwin('oh')){
                     alert('Congrats! Player ' + player + ' has won!');
                 }else{

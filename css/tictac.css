@@ -17,20 +17,32 @@
 
 .square{
     float: left;
-   /* background-color: green;*/
+   background: rgba(255, 255, 255, .9);
     width: 122px;
     height: 122px;
    border: 1px solid black;
    cursor: pointer;
+   text-align:center;
+   font-size: 100px;
 }
 
 .ex{
- background-color:purple;   
+ background-color:white;   
 }
 
 .oh{
-    background-color:yellow;   
+    background-color:white;   
 }
     
-    
+body {
+    background: no-repeat center center fixed;
+    background: url(http://image.shutterstock.com/z/stock-vector-grunge-simple-x-o-pattern-vector-brush-strokes-374412109.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.spacer {
+  padding: 5%;
 }
