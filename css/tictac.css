@@ -4,15 +4,14 @@
        height: 372px;
        margin:  auto;
   
-  -webkit-box-shadow: 1px 1px 5px  black;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    1px 1px 5px  black;  /* Firefox 3.5 - 3.6 */
-   box-shadow:         1px 1px 10px  black;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  
 }
 
 row {
    /* background-color:Blue;*/
     clear:both;
     overflow:hidden;
+    margin:  auto;
 }
 
 .square{
@@ -24,6 +23,10 @@ row {
    cursor: pointer;
    text-align:center;
    font-size: 100px;
+   -moz-box-shadow: 8px 8px 15px #000; 
+ -webkit-box-shadow: 8px 8px 15px #000; 
+ box-shadow: 8px 8px 15px #000; 
+  
 }
 
 .ex{
@@ -45,4 +48,18 @@ body {
 
 .spacer {
   padding: 5%;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+   color: white;
+   font: 3em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+  
 }
+
+.btn{
+      text-align: center;
+      -moz-box-shadow: 8px 8px 15px #000; 
+ -webkit-box-shadow: 8px 8px 15px #000; 
+ box-shadow: 8px 8px 15px #000; 
+
+     
+} 

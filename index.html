@@ -5,16 +5,18 @@
         <title>Tic Tac Toe</title>
         <link rel="stylesheet" href="css/tictac.css" type="text/css" />
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
          <script type="text/javascript" charset = "utf-8" src="bower_components/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="js/tictac.js"></script>
        
     </head>
     <body>
         
-         <div class='spacer'></div>
+         <div class='spacer'>TIC-TAC-TOE</div>
         
-     <div class="gameBoard">
-         
+       
+     <div class="gameBoard" id='gameBoard'>
+        
      <div class="row">
          <div class="square sq1"></div>
          <div class="square sq2"></div>
@@ -35,6 +37,16 @@
          
      </div>
      
+      <div class='spacer'></div>
+     
+      <div class="col-md-12 text-center" id="reload"> 
+             <a href="#" class = "btn btn-primary btn-lg">
+      Reload Game?</a>
+        </div>
+        
+        <div class="col-md-12 text-center spacer" id="win">Player 1 has won!</div>
+        
+        <div class="col-md-12 text-center spacer" id="hal">HAL has won!</div> 
         
     </body>
     </html>

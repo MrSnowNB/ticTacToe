@@ -1,10 +1,19 @@
 $(document).ready(function(){
     
    var player = 1;
-   
+   var random = Math.floor(Math.random() * 9) + 1;
+   var rand = Math.floor(Math.random() * 9) + 1;
+   var tag = ".sq" + rand.toString();
+   /*var testing = "sq0"*/
+    $("#reload").hide();
+    $("#win").hide();
+    $("#hal").hide();
+    
+ 
     $('.square').on('click', function(event){
         
         //alert('add symbol here');
+       
         
         var squareSelected = $(this);
         
@@ -15,18 +24,31 @@ $(document).ready(function(){
             if(player===1){
                 squareSelected.addClass('ex').append('<i class="fa fa-times" aria-hidden="true"></i>');
                 if(didIwin('ex')){
-                    alert('Congrats! Player ' + player + ' has won!');
-                    location.reload();
+                    $("#gameBoard").hide();
+                    /*alert('Congrats! Player ' + player + ' has won! Press ok to load a new game');*/
+                     $("#reload").show();
+                      $("#reload").click(function() {
+                        location.reload();
+                        });
+                        $("#win").show();
                 }else{
+                   
+                    console.log (tag);
                     player = 2;
                 }
             
             }else{
-                squareSelected.addClass('oh').append('<i class="fa fa-circle-o" aria-hidden="true"></i>');
+                $(randomSquare(random)).addClass('oh').append('<i class="fa fa-circle-o" aria-hidden="true"></i>');
                 if(didIwin('oh')){
-                    alert('Congrats! Player ' + player + ' has won!');
-                    location.reload();
+                    $("#gameBoard").hide();
+                   /* alert('Rats! HAL has won! Press ok to load a new game');*/
+                     $("#reload").show();
+                      $("#reload").click(function() {
+                        location.reload();
+                        });
+                        $("#hal").show();
                 }else{
+                    console.log (tag);
                     player = 1;
                 }
             }
@@ -36,6 +58,7 @@ $(document).ready(function(){
         }
         
     });
+    
     
    function didIwin(symbol) {//pass in "ex" || "oh"; returns True = win || false = did not win
             if($('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol) && $('.sq3').hasClass(symbol)){
@@ -61,5 +84,20 @@ $(document).ready(function(){
             
        
    }
+   
+   
+   function randomSquare(rand){
+     
+     
+       while ($(tag).hasClass('ex') || $(tag).hasClass('oh')){
+            rand = Math.floor(Math.random() * 9) + 1;
+            tag = ".sq" + rand.toString();
+        }
+           
+            return tag;
+        
+   };
+   
+   
     
 })
